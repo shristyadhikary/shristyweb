@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simran Adhikari | Frontend Developer Profile</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+            color: #222;
+        }
+        header {
+            background: #3730a3;
+            color: #fff;
+            padding: 2.5rem 0 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(55,48,163,0.08);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.7rem;
+            letter-spacing: 2px;
+        }
+        header p {
+            margin: 0.7rem 0 0 0;
+            font-size: 1.1rem;
+            color: #c7d2fe;
+        }
+        nav {
+            margin-top: 1.2rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1.2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #fbbf24;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2.5rem auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(55,48,163,0.07);
+            padding: 2.5rem 2rem;
+        }
+        section {
+            margin-bottom: 2.7rem;
+        }
+        h2 {
+            color: #3730a3;
+            border-bottom: 2px solid #fbbf24;
+            display: inline-block;
+            padding-bottom: 0.3rem;
+            margin-bottom: 1.2rem;
+        }
+        .profile {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2rem;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: #e0e7ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #3730a3;
+            font-weight: 700;
+        }
+        .profile-details {
+            flex: 1;
+        }
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin: 0.5rem 0 0 0;
+        }
+        .info-list li {
+            margin-bottom: 0.4rem;
+            font-size: 1.05rem;
+        }
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+        }
+        .service-card {
+            background: #f8fafc;
+            border: 1px solid #e0e7ff;
+            border-radius: 8px;
+            padding: 1.2rem 1rem;
+            flex: 1 1 220px;
+            min-width: 200px;
+            box-shadow: 0 1px 4px rgba(55,48,163,0.04);
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+        .project-card {
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 1px 4px rgba(55,48,163,0.05);
+        }
+        .project-card h3 {
+            margin-top: 0;
+        }
+        .project-card a {
+            color: #fbbf24;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .reviews {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+        }
+        .review-card {
+            background: #e0e7ff;
+            border-radius: 8px;
+            padding: 1rem;
+            flex: 1 1 250px;
+            min-width: 220px;
+            box-shadow: 0 1px 4px rgba(55,48,163,0.04);
+        }
+        .review-card .author {
+            font-weight: 700;
+            color: #3730a3;
+        }
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+        .article-card {
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 1rem;
+            box-shadow: 0 1px 4px rgba(55,48,163,0.05);
+        }
+        .article-card h3 {
+            margin-top: 0;
+        }
+        .article-card a {
+            color: #3730a3;
+            text-decoration: underline;
+            font-weight: 700;
+        }
+        .contact {
+            text-align: center;
+        }
+        .contact a {
+            color: #fff;
+            background: #fbbf24;
+            padding: 0.8rem 1.7rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: background 0.2s;
+        }
+        .contact a:hover {
+            background: #f59e42;
+        }
+        @media (max-width: 700px) {
+            .container {
+                padding: 1rem;
+            }
+            .profile {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Simran Adhikari</h1>
+        <p>Frontend Developer | UI/UX Specialist | JavaScript Advocate</p>
+        <nav>
+            <a href="#profile">Profile</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#articles">JS Articles</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="profile" class="profile">
+            <div class="profile-img">AC</div>
+            <div class="profile-details">
+                <h2>Profile</h2>
+                <ul class="info-list">
+                    <li><strong>Name:</strong>Simran adhikari</li>
+                    <li><strong>Address:</strong> 1234 Elm Street, New York, NY, USA</li>
+                    <li><strong>Email:</strong> alex.carter.dev@gmail.com</li>
+                    <li><strong>Phone:</strong> +1 555-123-4567</li>
+                    <li><strong>Experience:</strong> 4+ years</li>
+                </ul>
+                <p>Hi! I'm Alex, a creative frontend developer with a passion for building interactive and accessible web experiences. I specialize in React, modern JavaScript, and pixel-perfect UI design.</p>
+            </div>
+        </section>
+        <section id="services">
+            <h2>Services</h2>
+            <div class="services-list">
+                <div class="service-card">
+                    <strong>Website Development</strong>
+                    <p>Custom, responsive websites using the latest frontend technologies.</p>
+                </div>
+                <div class="service-card">
+                    <strong>UI/UX Design</strong>
+                    <p>Designing user interfaces that are both beautiful and user-friendly.</p>
+                </div>
+                <div class="service-card">
+                    <strong>Performance Optimization</strong>
+                    <p>Speeding up your site for better user experience and SEO.</p>
+                </div>
+                <div class="service-card">
+                    <strong>JavaScript Consulting</strong>
+                    <p>Expert advice and solutions for your JavaScript projects.</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>DevConnect</h3>
+                    <p>A social platform for developers to share code snippets and collaborate. Built with React and Firebase.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>QuickShop</h3>
+                    <p>An e-commerce frontend template with a modern cart and product filtering. Built with vanilla JS and CSS Grid.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Travelly</h3>
+                    <p>A travel blog and booking site with smooth animations and responsive layouts. Built with HTML, CSS, and JavaScript.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+            </div>
+        </section>
+        <section id="reviews">
+            <h2>Reviews</h2>
+            <div class="reviews">
+                <div class="review-card">
+                    <p>"Alex delivered our website ahead of schedule and exceeded our expectations. Highly recommended!"</p>
+                    <div class="author">- Jamie L., Startup Founder</div>
+                </div>
+                <div class="review-card">
+                    <p>"Great attention to detail and fantastic communication throughout the project."</p>
+                    <div class="author">- Priya S., Product Manager</div>
+                </div>
+                <div class="review-card">
+                    <p>"The UI/UX design was top-notch. Our users love the new interface!"</p>
+                    <div class="author">- Mark T., SaaS CEO</div>
+                </div>
+            </div>
+        </section>
+        <section id="articles">
+            <h2>JS Articles</h2>
+            <div class="articles" id="articles-list">
+                <!-- JS will populate articles here -->
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Let's work together! Reach out for projects, consulting, or just to say hi.</p>
+            <a href="mailto:alex.carter.dev@gmail.com">Email Me</a>
+        </section>
+    </div>
+    <script>
+        // Example JS articles data
+        const jsArticles = [
+            {
+                title: "Understanding Closures in JavaScript",
+                summary: "A deep dive into closures, scope, and practical use-cases for frontend developers.",
+                url: "https://dev.to/alexcarter/understanding-closures-in-javascript-1234"
+            },
+            {
+                title: "10 Tips for Writing Clean JavaScript Code",
+                summary: "Improve your code quality and maintainability with these essential tips.",
+                url: "https://dev.to/alexcarter/10-tips-for-clean-javascript-5678"
+            },
+            {
+                title: "Async/Await Made Simple",
+                summary: "Learn how to handle asynchronous operations in JavaScript with async/await.",
+                url: "https://dev.to/alexcarter/async-await-made-simple-91011"
+            }
+        ];
+        const articlesList = document.getElementById('articles-list');
+        jsArticles.forEach(article => {
+            const card = document.createElement('div');
+            card.className = 'article-card';
+            card.innerHTML = `
+                <h3>${article.title}</h3>
+                <p>${article.summary}</p>
+                <a href="${article.url}" target="_blank">Read More</a>
+            `;
+            articlesList.appendChild(card);
+        });
+    </script>
+</body>
+</html>
